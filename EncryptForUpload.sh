@@ -40,6 +40,9 @@ openssl aes-256-cbc -a -salt -k $pass -in $file -out $outfile
 
 #to decrypt
 #openssl aes-256-cbc -d -a -in $outfile -out 
+#or 
+#openssl aes-256-cbc -md sha256 -d -a -in $outfile -out 
+
 
 echo "done"
 echo "The encrypted file is $outfile"
